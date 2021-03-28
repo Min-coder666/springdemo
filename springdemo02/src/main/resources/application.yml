@@ -1,0 +1,28 @@
+
+
+spring:
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .ftl
+#jasypt:
+#  encryptor:
+#    password: 123!@#
+#info:
+#  username: ENC(hvG64MI8p1AKZEEi8mo86A==)
+#  password: ENC(aUEKoG+gBymp2YKYrRZGZw==)
+#
+#
+#---
+#spring:
+#  profiles: dev
+#
+#server:
+#  port: 8010
+#
+#---
+#spring:
+#  profiles: prod
+#
+#server:
+#  port: 8090
