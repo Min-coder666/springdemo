@@ -5,6 +5,9 @@ spring:
     view:
       prefix: /templates/
       suffix: .ftl
+
+#  messages:
+#    basename: i18n/message
 #jasypt:
 #  encryptor:
 #    password: 123!@#
