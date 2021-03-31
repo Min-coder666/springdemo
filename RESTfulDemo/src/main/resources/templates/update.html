@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>更新歌曲</title>
+</head>
+<body>
+    <form th:action="@{/song}" method="post">
+        <input type="hidden" name="_method" value="put">
+        <label>歌曲名</label><input type="text" name="name" th:value="${song.name}" readonly="readonly"><br>
+        <label>歌手</label><input type="text" name="singer" th:value="${song.singer}"><br>
+        <input type="submit" value="确认修改">
+    </form>
+</body>
+</html>
