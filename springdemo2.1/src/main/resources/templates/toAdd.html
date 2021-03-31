@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://thymeleaf.org">
+    <title>添加歌曲</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>
+                <tr>歌曲名</tr>
+                <tr>歌手</tr>
+            </th>
+
+        </thead>
+        <tbody>
+            <form th:action="@{/song/add}">
+                <tr>
+                    <td><input type="text" name="name"></td>
+                    <td><input type="text" name="singer"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="添加"></td>
+                </tr>
+            </form>
+
+        </tbody>
+    </table>
+</body>
+</html>
