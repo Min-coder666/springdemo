@@ -1,0 +1,35 @@
+server:
+  port: 8090
+
+context:
+  listener:
+    classes: com.min.listener.MyListener4
+#spring:
+#  mvc:
+#    view:
+#      prefix: /templates/
+#      suffix: .ftl
+
+#  messages:
+#    basename: i18n/message
+#jasypt:
+#  encryptor:
+#    password: 123!@#
+#info:
+#  username: ENC(hvG64MI8p1AKZEEi8mo86A==)
+#  password: ENC(aUEKoG+gBymp2YKYrRZGZw==)
+#
+#
+#---
+#spring:
+#  profiles: dev
+#
+#server:
+#  port: 8010
+#
+#---
+#spring:
+#  profiles: prod
+#
+#server:
+#  port: 8090
