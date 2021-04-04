@@ -2,7 +2,6 @@ package com.min.serviece;
 
 import com.min.bean.Song;
 import com.min.dao.SongDao;
-import com.min.dao1.SongDao1;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,18 +12,15 @@ public class SongServiceImpl implements SongService {
 
     @Autowired
     private SongDao songDao;
-
-    @Autowired
-    private SongDao1 songDao1;
     @Override
     public List<Song> getSongList() {
-        return songDao1.findAll();
+        return songDao.selectAll();
     }
 
-//    @Override
-//    public void addSong(Song song) {
-//        songDao.addSong(song);
-//    }
+    @Override
+    public void addSong(Song song) {
+        songDao.insert(song);
+    }
 //
 //    @Override
 //    public void delete(String name) {

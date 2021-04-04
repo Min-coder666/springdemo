@@ -4,7 +4,13 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/springdemo?useSSL=false&characterEncoding=UTF-8
-    username: root
-    password: root
-    driver-class-name: com.mysql.jdbc.Driver
+    db1:
+      jdbc-url: jdbc:mysql://localhost:3306/springdemo?useSSL=false&characterEncoding=UTF-8
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+    db2:
+      jdbc-url: jdbc:mysql://localhost:3306/ba_springdemo?useSSL=false&characterEncoding=UTF-8
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
